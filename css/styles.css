@@ -11,6 +11,8 @@
   --line-color: #ececec;
   --main-border-color: #eeeeee;
   --gradient-color: rgba(47, 48, 58, 0.4);
+  --main-icon-color: #afb1b8;
+  --main-icon-bg-color: rgba(255, 255, 255, 0.1);
 }
 
 /* ==================== Глобальні стилі ====================*/
@@ -123,10 +125,6 @@ ul {
 .site-nav-item:not(:last-child) {
   margin-right: 50px;
 }
-
-/* .site-nav-item + .site-nav-item {
-  margin-left: 50px;
-} */
 
 .site-nav-link {
   display: block;
@@ -247,6 +245,18 @@ ul {
   width: 270px;
 }
 
+.benefits-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+
+  width: 270px;
+  height: 120px;
+  background-color: var(--secondary-bg-color);
+  border-radius: 4px;
+}
+
 .benefits-subtitle {
   margin-bottom: 10px;
 
@@ -322,13 +332,69 @@ ul {
 }
 
 .team-prof {
+  margin-bottom: 16px;
   color: var(--secondary-text-color);
   font-size: 16px;
   letter-spacing: 0.03em;
   line-height: calc(19 / 16);
 }
 
+.social {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--main-icon-color);
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+  color: var(--main-light-color);
+}
+
+.social-icon {
+  fill: currentColor;
+}
+
 /* ==================== Наша кломанда ====================*/
+
+/* ==================== Клієнти ====================*/
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+
+  color: var(--main-icon-color);
+  border: 1px solid;
+  border-radius: 4px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--accent-color);
+}
+
+.clients-icon {
+  fill: currentColor;
+}
+
+/* ==================== Клієнти ====================*/
 /* ==================== Стилі головної сторінки ====================*/
 
 /* ==================== Підвал ====================*/
@@ -373,6 +439,55 @@ ul {
 
 .location-item:not(:last-child) {
   margin-bottom: 9px;
+}
+
+.call-subtitle {
+  margin-bottom: 20px;
+
+  color: var(--main-light-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.footer-box {
+  display: flex;
+  align-items: baseline;
+}
+
+.main-info-box {
+  display: inline-block;
+}
+
+.call {
+  display: inline-block;
+  margin-left: 93px;
+  width: 206px;
+}
+
+.call-list {
+  display: flex;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-link-footer {
+  color: var(--main-light-color);
+  background-color: var(--main-icon-bg-color);
+}
+
+.social-link-footer:hover,
+.social-link-footer:focus {
+  background-color: var(--accent-color);
+}
+
+.social-icon {
+  fill: currentColor;
 }
 
 /* ==================== Підвал ====================*/
