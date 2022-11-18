@@ -160,7 +160,8 @@ ul {
 }
 
 .contacts-link {
-  display: block;
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -169,6 +170,12 @@ ul {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
 }
+
+.contacts-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 /* ==================== Контакти ==================== */
 /* ==================== Стилі шапки ====================*/
 
@@ -189,9 +196,9 @@ ul {
   height: 600px;
   background-image: linear-gradient(var(--gradient-color), var(--gradient-color)),
     url(../images/overlay.jpg);
-  /* background-image: url(../images/overlay.jpg);
   background-repeat: no-repeat;
-  background-size: cover; */
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-title {
@@ -302,7 +309,7 @@ ul {
 }
 
 .team-data {
-  padding: 30px;
+  padding: 30px 32px;
 }
 
 .team-member {
